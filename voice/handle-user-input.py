@@ -13,7 +13,8 @@ def answer_call():
     ncco =[
         {
             "action": "talk",
-            "text": "Hello, please press any key to continue."
+            "text": "Hi, this call collects DTMF input using Vonage's Voice API. Please press a couple of buttons on your phone keypad",
+            "language": "en-US"
         },
         {
             "action": "input",

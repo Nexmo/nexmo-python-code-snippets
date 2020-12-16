@@ -22,7 +22,7 @@ response = client.update_call(
         "action": "transfer",
         "destination": {
             "type": "ncco",
-            "ncco": [{"action": "talk", "text": "This is a transfer action using an inline NCCO"}]
+            "ncco": [{"action": "talk", "text": "Hello, thank you for using the Vonage API. If you can hear this message, then transfer to a new NCCO worked."}]
         }
     }
 )

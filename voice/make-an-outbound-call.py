@@ -9,8 +9,8 @@ client = nexmo.Client(
 
 response = client.create_call({
   'to': [{'type': 'phone', 'number': TO_NUMBER}],
-  'from': {'type': 'phone', 'number': NEXMO_NUMBER},
-  'answer_url': ['https://developer.nexmo.com/ncco/tts.json']
+  'from': {'type': 'phone', 'number': VONAGE_NUMBER},
+  'answer_url': ['https://nexmo-community.github.io/ncco-examples/text-to-speech.json']
 })
 
 pprint(response)

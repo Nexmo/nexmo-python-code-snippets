@@ -7,6 +7,6 @@ client = nexmo.Client(
     private_key=APPLICATION_PRIVATE_KEY_PATH,
 )
 
-dest = {"type": "ncco", "url": ["https://developer.nexmo.com/ncco/tts.json"]}
+dest = {"type": "ncco", "url": ["https://nexmo-community.github.io/ncco-examples/transfer.json"]}
 response = client.update_call(UUID, action="transfer", destination=dest)
 pprint(response)

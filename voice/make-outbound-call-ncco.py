@@ -9,8 +9,15 @@ client = nexmo.Client(
 
 response = client.create_call({
     'to': [{'type': 'phone', 'number': TO_NUMBER}],
-    'from': {'type': 'phone', 'number': NEXMO_NUMBER},
-    'ncco': [{'action': 'talk', 'text': 'This is a text to speech call from Nexmo'}]
+    'from': {'type': 'phone', 'number': VONAGE_NUMBER},
+    'ncco': [
+        {
+            'action': 'talk',
+            'text': 'You are listening to a test text-to-speech call made with the Vonage Voice API',
+            "language": "en-AU",
+            "style": 3
+        }
+    ]
 })
 
 pprint(response)

@@ -8,11 +8,17 @@ def answer_call():
     ncco = [
         {
             "action": "connect",
-            "from": "NEXMO_NUMBER",
-            "endpoint": [{
-                "type": "phone",
-                "number": "YOUR_SECOND_NUMBER"
-            }]
+            "from": "VONAGE_NUMBER",
+            "endpoint": [
+                {
+                    "type": "phone",
+                    "number": "TO_NUMBER"
+                }
+            ]
+        },
+        {
+            "action": "talk",
+            "text": "You are connected"
         }
     ]
     return jsonify(ncco)

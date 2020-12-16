@@ -9,7 +9,7 @@ def answer_call():
     ncco = [
         {
             "action": "talk",
-            "text": "Please wait while we connect you to the conference"
+            "text": "You are joining a conference that was created using Vonage's Voice API."
         },
         {
             "action": "conversation",
